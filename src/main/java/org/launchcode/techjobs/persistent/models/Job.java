@@ -1,6 +1,9 @@
 package org.launchcode.techjobs.persistent.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Job{
@@ -9,7 +12,8 @@ public class Job{
     @GeneratedValue
     private int id;
 
-    private String name;
+    @NotEmpty
+    @NotNull
 
     private String employer;
     private String skills;
