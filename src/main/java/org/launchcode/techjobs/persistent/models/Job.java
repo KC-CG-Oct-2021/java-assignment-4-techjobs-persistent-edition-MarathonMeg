@@ -12,6 +12,8 @@ public class Job{
     @GeneratedValue
     private int id;
 
+    private String name;
+
     @NotEmpty
     @NotNull
 
