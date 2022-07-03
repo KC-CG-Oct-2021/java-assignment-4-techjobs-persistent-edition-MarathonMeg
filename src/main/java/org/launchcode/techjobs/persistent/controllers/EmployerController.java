@@ -40,7 +40,7 @@ public class EmployerController {
     }
 
     //renders a page to view the contents of an individual employer object
-    //it willmake use of that employer objects id field to grab the correct info from employerRespository
+    //it will make use of that employer objects id field to grab the correct info from employer Respository
     @GetMapping("view/{employerId}")
     public String displayViewEmployer(Model model, @PathVariable int employerId) {
 
